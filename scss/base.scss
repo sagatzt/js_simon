@@ -1,0 +1,61 @@
+@import './components/modal';
+@import './components/alert';
+//componentes de programadores:
+@import './components/inicio';
+@import './components/juego';
+@import './components/puntuaciones';
+
+
+@font-face {
+    font-family: "goldman-regular";
+    src: url("../fonts/Goldman-Regular.ttf");
+}
+
+body{
+    background-color: #fff;
+    font-family: goldman-regular;
+    font-size:.8em;
+}
+
+header {
+    position: fixed;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: 9999;
+    nav{
+        background-color: #000;
+        border-bottom:5px solid #F3D94E;
+    }    
+    a,a:hover{
+        color:#F3D94E;
+        margin-left:10px;
+    }
+}
+iframe {
+    width: 800px;
+    height: 500px;
+    border: 0px;
+    overflow-y: hidden;
+}
+main{
+    margin-top:80px;
+    .container{
+        background: #fff;
+        min-height: 400px;
+        .row{
+            border: 1px solid red;
+            min-height: 16px;
+            div[class^='col-']{
+                min-height: 100px;
+                border: 1px dashed #000;
+            }
+        }
+
+    }
+}
+
+.hide{
+    display:none;
+}
+

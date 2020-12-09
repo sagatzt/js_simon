@@ -1,0 +1,25 @@
+.marcador .col-4{
+    text-align: center;
+    font-size: 3em;
+}
+.red{
+    background: red;
+}
+.blue{
+    background: blue;
+}
+.green{
+    background: green;
+}
+.yellow{
+    background: yellow;
+}
+
+.color{
+    max-width:200px;
+    max-height:100px;   
+    cursor: hand; 
+}
+.color-off {
+    filter: brightness(50%);
+}

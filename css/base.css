@@ -1,0 +1,192 @@
+.modal {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: table;
+  font-size: .8em;
+  color: #000;
+}
+
+.modal .modal-container {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.modal .modal-body {
+  display: inline-block;
+  /*margin:0px auto;*/
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  width: 90%;
+  max-width: 300px;
+  text-align: right;
+  border-radius: 5px;
+}
+
+.modal .modal-body span {
+  width: 100px;
+}
+
+.modal .modal-body input, .modal .modal-body select {
+  border: 0px;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  max-width: 200px;
+  color: #888;
+}
+
+.modal .modal-body input[type='number'] {
+  text-align: right;
+  max-width: 65px;
+}
+
+.modal .modal-title {
+  background: #ccc;
+}
+
+.modal-hidden {
+  display: none;
+}
+
+.modal-blur {
+  -moz-filter: blur(8px);
+  -o-filter: blur(8px);
+  -ms-filter: blur(8px);
+  filter: blur(8px);
+}
+
+.alert {
+  display: none;
+  position: fixed;
+  bottom: 2.5%;
+  opacity: 1;
+}
+
+.alert .texto {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: .7em;
+}
+
+.alert.mostrar {
+  display: block;
+  /*-webkit-animation: fadein 0.5s, fadeout 0.5s 4.6s;
+    animation: fadein 0.5s, fadeout 0.5s 4.6s;*/
+  animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 2.5%;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 2.5%;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+.marcador .col-4 {
+  text-align: center;
+  font-size: 3em;
+}
+
+.red {
+  background: red;
+}
+
+.blue {
+  background: blue;
+}
+
+.green {
+  background: green;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.color {
+  max-width: 200px;
+  max-height: 100px;
+  cursor: hand;
+}
+
+.color-off {
+  filter: brightness(50%);
+}
+
+@font-face {
+  font-family: "goldman-regular";
+  src: url("../fonts/Goldman-Regular.ttf");
+}
+
+body {
+  background-color: #fff;
+  font-family: goldman-regular;
+  font-size: .8em;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 9999;
+}
+
+header nav {
+  background-color: #000;
+  border-bottom: 5px solid #F3D94E;
+}
+
+header a, header a:hover {
+  color: #F3D94E;
+  margin-left: 10px;
+}
+
+iframe {
+  width: 800px;
+  height: 500px;
+  border: 0px;
+  overflow-y: hidden;
+}
+
+main {
+  margin-top: 80px;
+}
+
+main .container {
+  background: #fff;
+  min-height: 400px;
+}
+
+main .container .row {
+  border: 1px solid red;
+  min-height: 16px;
+}
+
+main .container .row div[class^='col-'] {
+  min-height: 100px;
+  border: 1px dashed #000;
+}
+
+.hide {
+  display: none;
+}
