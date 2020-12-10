@@ -101,7 +101,7 @@
   }
 }
 
-.marcador .col-4 {
+.marcador .col-3 {
   text-align: center;
   font-size: 3em;
 }
@@ -110,22 +110,58 @@
   background: red;
 }
 
+.red:hover {
+  filter: brightness(75%);
+}
+
+.red:active {
+  filter: brightness(150%);
+  box-shadow: 0px 0px 21px 0px red;
+}
+
 .blue {
   background: blue;
+}
+
+.blue:hover {
+  filter: brightness(75%);
+}
+
+.blue:active {
+  filter: brightness(150%);
+  box-shadow: 0px 0px 21px 0px blue;
 }
 
 .green {
   background: green;
 }
 
+.green:hover {
+  filter: brightness(75%);
+}
+
+.green:active {
+  filter: brightness(150%);
+  box-shadow: 0px 0px 21px 0px lime;
+}
+
 .yellow {
   background: yellow;
+}
+
+.yellow:hover {
+  filter: brightness(75%);
+}
+
+.yellow:active {
+  filter: brightness(150%);
+  box-shadow: 0px 0px 21px 0px yellow;
 }
 
 .color {
   max-width: 200px;
   max-height: 100px;
-  cursor: hand;
+  cursor: pointer;
 }
 
 .color-off {

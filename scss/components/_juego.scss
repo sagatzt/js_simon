@@ -1,24 +1,60 @@
-.marcador .col-4{
+.marcador .col-3{
     text-align: center;
     font-size: 3em;
 }
 .red{
     background: red;
+    &:hover{
+        filter: brightness(75%);  
+    }
+    &:active{
+        filter: brightness(150%);
+        -webkit-box-shadow: 0px 0px 21px 0px rgba(255,0,0,1);
+        -moz-box-shadow: 0px 0px 21px 0px rgba(255,0,0,1);
+        box-shadow: 0px 0px 21px 0px rgba(255,0,0,1);  
+    }
 }
 .blue{
     background: blue;
+    &:hover{
+        filter: brightness(75%);  
+    }
+    &:active{
+        filter: brightness(150%);
+        -webkit-box-shadow: 0px 0px 21px 0px rgba(0,0,255,1);
+        -moz-box-shadow: 0px 0px 21px 0px rgba(0,0,255,1);
+        box-shadow: 0px 0px 21px 0px rgba(0,0,255,1);    
+    }  
 }
 .green{
     background: green;
+    &:hover{
+        filter: brightness(75%);  
+    }
+    &:active{
+        filter: brightness(150%);
+        -webkit-box-shadow: 0px 0px 21px 0px rgba(0,255,0,1);
+        -moz-box-shadow: 0px 0px 21px 0pxrgba(0,255,0,1);
+        box-shadow: 0px 0px 21px 0px rgba(0,255,0,1);    
+    }  
 }
 .yellow{
     background: yellow;
+    &:hover{
+        filter: brightness(75%);  
+    }
+    &:active{
+        filter: brightness(150%);
+        -webkit-box-shadow: 0px 0px 21px 0px rgba(255,255,0,1);
+        -moz-box-shadow: 0px 0px 21px 0px rgba(255,255,0,1);
+        box-shadow: 0px 0px 21px 0px rgba(255,255,0,1);     
+    } 
 }
 
 .color{
     max-width:200px;
     max-height:100px;   
-    cursor: hand; 
+    cursor: pointer; 
 }
 .color-off {
     filter: brightness(50%);
