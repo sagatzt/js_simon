@@ -1,9 +1,6 @@
 let notas=document.querySelectorAll(".audio")
 let simon=document.querySelectorAll(".color")
-let comprobar=document.querySelector("#btnComprobar")
 let empezar=document.querySelector("#btnEmpezar")
-
-
 
 //inicia secuencia colores cuadritos
 const lanzarJugada=(jugada)=>{
