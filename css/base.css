@@ -168,6 +168,13 @@
   filter: brightness(50%);
 }
 
+.juego-jugador-nombre {
+  position: absolute;
+  right: 40px;
+  top: 30px;
+  font-size: 2em;
+}
+
 @font-face {
   font-family: "goldman-regular";
   src: url("../fonts/Goldman-Regular.ttf");
