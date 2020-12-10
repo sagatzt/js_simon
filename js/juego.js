@@ -21,19 +21,21 @@ empezar.onclick=()=>{
     lanzarJugada(partida.jugada)
     pos=0
 }
-
+ 
 //al pulsar uno de los cuadritos, guardo el orden en que se pulsan
 let pos=0
 document.querySelector(".simon").onclick=(e)=>{
+    let final=false
     if(partida.jugada[pos]==e.target.dataset.id)
         console.log("has acertado")
     else{
+        final=true
         partida.vidas--
-        vidas.innerHTML=partida.vidas
-        if(vidas==0)
-            console.log("Ya no tienes más vidas")
     }
-    puntuacion.innerHTML=partida.jugada.length
+    if(final || pos==partida.jugada.length){
+        vidas.innerHTML=partida.vidas
+        puntuacion.innerHTML=partida.jugada.length
+    }
     pos++
 }
 ////////////////////////////////////////////////////
